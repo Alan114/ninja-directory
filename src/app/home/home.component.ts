@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
   homeTitle = 'Welcome to the home page';
+  myString = 'I love space';
+  myBoolean = true;
   constructor() {}
 
   ngOnInit(): void {}
