@@ -1,5 +1,10 @@
 <h2>{{ homeTitle }}</h2>
 
 <input type="text" [value]="myString" />
+<hr />
 <input type="text" value="{{ myString }}" />
+<hr />
 <input type="text" [required]="myBoolean" />
+<hr />
+
+<button (click)="alertMe()">Click me</button>
