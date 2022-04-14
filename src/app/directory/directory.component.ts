@@ -6,10 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./directory.component.css'],
 })
 export class DirectoryComponent implements OnInit {
+  term: any;
   ninjas = [
     { name: 'Ryu', belt: 'black' },
     { name: 'SubZero', belt: 'blue' },
-    { name: 'Ken', belt: 'red' },
+    { name: 'Jason', belt: 'red' },
     { name: 'Reptile', belt: 'green' },
     { name: 'Guile', belt: 'purple' },
     { name: 'Cirax', belt: 'orange' },
