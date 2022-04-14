@@ -8,7 +8,11 @@ import { Component, OnInit } from '@angular/core';
 export class HomeComponent implements OnInit {
   homeTitle = 'Welcome to the home page';
   myString = 'I love space';
-  myBoolean = true;
+
+  ninja = {
+    name: 'Ryu',
+    belt: 'Black',
+  };
 
   alertMe() {
     alert('You clicked the button!!!');
