@@ -1,5 +1,5 @@
 <h2>{{ homeTitle }}</h2>
 
-<p>{{ ninja.name }}</p>
-<p>{{ ninja.belt }}</p>
+<p *ngIf="ninja">{{ ninja.name }}</p>
+<p *ngIf="ninja">{{ ninja.belt }}</p>
 <button (click)="fireYellEvent($event)">Hit me</button>
