@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-home',
@@ -7,16 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
   homeTitle = 'Welcome to the home page';
-  myString = 'I love space';
 
-  ninja = {
-    name: 'Ryu',
-    belt: 'Black',
-  };
-
-  alertMe() {
-    alert('You clicked the button!!!');
-  }
+  @Input() ninja: any;
 
   constructor() {}
 

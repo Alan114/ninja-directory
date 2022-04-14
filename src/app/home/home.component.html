@@ -1,15 +1,4 @@
 <h2>{{ homeTitle }}</h2>
 
-<input type="text" [value]="myString" />
-<hr />
-<input type="text" value="{{ myString }}" />
-<hr />
-<label for="ninja-name">Name:</label>
-<input id="ninja-name" [(ngModel)]="ninja.name" />
-<hr />
-<label for="ninja-belt">Belt:</label>
-<input id="ninja-belt" [(ngModel)]="ninja.belt" />
 <p>{{ ninja.name }}</p>
 <p>{{ ninja.belt }}</p>
-
-<button (click)="alertMe()">Click me</button>
