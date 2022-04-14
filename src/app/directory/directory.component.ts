@@ -6,8 +6,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./directory.component.css'],
 })
 export class DirectoryComponent implements OnInit {
-  classes = { blue: false, red: true, underline: false };
-  test = true;
+  ninjas = [
+    { name: 'Ryu', belt: 'black' },
+    { name: 'SubZero', belt: 'blue' },
+    { name: 'Ken', belt: 'red' },
+    { name: 'Reptile', belt: 'green' },
+    { name: 'Guile', belt: 'purple' },
+    { name: 'Cirax', belt: 'orange' },
+  ];
+  // classes = { blue: false, red: true, underline: false };
+  // test = true;
+
   constructor() {}
 
   ngOnInit(): void {}
