@@ -8,5 +8,5 @@
   </ul>
 </nav>
 <section id="main">
-  <app-home [ninja]="ninja"></app-home>
+  <app-home [ninja]="ninja" (onYell)="yell($event)"></app-home>
 </section>
