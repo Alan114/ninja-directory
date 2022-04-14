@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DirectoryComponent implements OnInit {
   classes = { blue: false, red: true, underline: false };
+  test = true;
   constructor() {}
 
   ngOnInit(): void {}
