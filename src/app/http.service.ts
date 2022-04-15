@@ -8,7 +8,7 @@ export class HttpService {
   constructor(private http: HttpClient) {}
 
   fetchData() {
-    return this.http.get('/assets/ninjas.json');
+    return this.http.get('https://nn-angular-922b9.firebaseio.com/.json');
 
     // return this.http.get<{ name: string; belt: string }[]>('/assets/ninjas.json');
   }
