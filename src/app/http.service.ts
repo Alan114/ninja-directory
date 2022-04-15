@@ -8,9 +8,8 @@ export class HttpService {
   constructor(private http: HttpClient) {}
 
   fetchData() {
-    return this.http
-      .get('/assets/ninjas.json')
-      .subscribe((data) => console.log(data));
+    return this.http.get('/assets/ninjas.json');
+
     // return this.http.get<{ name: string; belt: string }[]>('/assets/ninjas.json');
   }
 }

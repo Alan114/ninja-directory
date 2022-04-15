@@ -9,7 +9,7 @@ import { HttpService } from '../http.service';
 })
 export class DirectoryComponent implements OnInit {
   term: any;
-  ninjas = [];
+  ninjas: any = [];
   // ninjas = [
   //   { name: 'Ryu', belt: 'black' },
   //   { name: 'SubZero', belt: 'blue' },
@@ -31,6 +31,6 @@ export class DirectoryComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.httpService.fetchData();
+    this.httpService.fetchData().subscribe((data) => (this.ninjas = data));
   }
 }
